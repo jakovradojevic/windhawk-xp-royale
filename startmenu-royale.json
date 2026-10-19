@@ -271,7 +271,9 @@
       "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates > TextBlock#TextBlock",
       "styles": [
         "FontFamily=$XpFont",
-        "FontSize=12"
+        "FontSize=12",
+        "Foreground@PointerOver=#FFFFFF",
+        "Foreground@Pressed=#FFFFFF"
       ]
     },
     {
@@ -279,6 +281,13 @@
       "styles": [
         "Background=#ACA899",
         "Margin=2,3,2,3"
+      ]
+    },
+    {
+      "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates > Viewbox#IconRoot > ContentPresenter#IconContent",
+      "styles": [
+        "Foreground@PointerOver=#FFFFFF",
+        "Foreground@Pressed=#FFFFFF"
       ]
     }
   ],
@@ -536,6 +545,12 @@
         "background: linear-gradient(to right, #DCE8F8, #E9F1FC 50%, #E3EDFA) !important",
         "border-radius: 0 !important",
         "border-left: 1px solid #A7C3E8 !important"
+      ]
+    },
+    {
+      "target": ".suggestion:not(.groupHeader):hover *, .suggestion[aria-selected=\"true\"] *, .suggestion.selected *, .openPreviewPaneText, .openPreviewPaneText *",
+      "styles": [
+        "color: #FFFFFF !important"
       ]
     }
   ],

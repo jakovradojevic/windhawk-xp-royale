@@ -159,6 +159,12 @@
       "styles": [
         "Foreground=#1B2B4F"
       ]
+    },
+    {
+      "target": "SystemTray.ChevronIconView > * > TextBlock",
+      "styles": [
+        "Foreground=#FFFFFF"
+      ]
     }
   ],
   "themeResourceVariables": [
