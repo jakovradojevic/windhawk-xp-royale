@@ -2,10 +2,12 @@
   "theme": "",
   "styleConstants": [
     "BarBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#2F4FA8\" Offset=\"0.0\" /><GradientStop Color=\"#6C8BD8\" Offset=\"0.06\" /><GradientStop Color=\"#2A4CB0\" Offset=\"0.16\" /><GradientStop Color=\"#1A3796\" Offset=\"0.6\" /><GradientStop Color=\"#132C82\" Offset=\"0.92\" /><GradientStop Color=\"#0A1C5C\" Offset=\"1.0\" /></LinearGradientBrush>",
-    "StartBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#2F6E2F\" Offset=\"0.0\" /><GradientStop Color=\"#9BE29B\" Offset=\"0.07\" /><GradientStop Color=\"#4DB84D\" Offset=\"0.22\" /><GradientStop Color=\"#2F8F33\" Offset=\"0.7\" /><GradientStop Color=\"#1D6421\" Offset=\"0.92\" /><GradientStop Color=\"#103E12\" Offset=\"1.0\" /></LinearGradientBrush>",
     "ButtonBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#7C9BE6\" Offset=\"0.0\" /><GradientStop Color=\"#4F72CE\" Offset=\"0.12\" /><GradientStop Color=\"#3A5DC0\" Offset=\"0.85\" /><GradientStop Color=\"#2A49A6\" Offset=\"1.0\" /></LinearGradientBrush>",
     "ButtonActiveBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#0B1F66\" Offset=\"0.0\" /><GradientStop Color=\"#16308A\" Offset=\"0.2\" /><GradientStop Color=\"#1A3796\" Offset=\"1.0\" /></LinearGradientBrush>",
-    "TrayBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#1A7FE0\" Offset=\"0.0\" /><GradientStop Color=\"#5FB4F5\" Offset=\"0.06\" /><GradientStop Color=\"#1E86E6\" Offset=\"0.18\" /><GradientStop Color=\"#1673D6\" Offset=\"0.85\" /><GradientStop Color=\"#0D4FB0\" Offset=\"1.0\" /></LinearGradientBrush>"
+    "TrayBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#1A7FE0\" Offset=\"0.0\" /><GradientStop Color=\"#5FB4F5\" Offset=\"0.06\" /><GradientStop Color=\"#1E86E6\" Offset=\"0.18\" /><GradientStop Color=\"#1673D6\" Offset=\"0.85\" /><GradientStop Color=\"#0D4FB0\" Offset=\"1.0\" /></LinearGradientBrush>",
+    "StartBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#2F6E2F\" Offset=\"0\" /><GradientStop Color=\"#9BE29B\" Offset=\"0.07\" /><GradientStop Color=\"#4DB84D\" Offset=\"0.22\" /><GradientStop Color=\"#2F8F33\" Offset=\"0.7\" /><GradientStop Color=\"#1D6421\" Offset=\"0.92\" /><GradientStop Color=\"#103E12\" Offset=\"1\" /></LinearGradientBrush>",
+    "StartHoverBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#3A7D3A\" Offset=\"0\" /><GradientStop Color=\"#B0EDB0\" Offset=\"0.07\" /><GradientStop Color=\"#62C862\" Offset=\"0.22\" /><GradientStop Color=\"#3AA03E\" Offset=\"0.7\" /><GradientStop Color=\"#257229\" Offset=\"0.92\" /><GradientStop Color=\"#164A18\" Offset=\"1\" /></LinearGradientBrush>",
+    "StartPressedBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#0F3D11\" Offset=\"0\" /><GradientStop Color=\"#1D6421\" Offset=\"0.12\" /><GradientStop Color=\"#2A7F2E\" Offset=\"0.5\" /><GradientStop Color=\"#3E9E42\" Offset=\"0.85\" /><GradientStop Color=\"#5DB45D\" Offset=\"1\" /></LinearGradientBrush>"
   ],
   "controlStyles": [
     {
@@ -41,14 +43,16 @@
       ]
     },
     {
-      "target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel",
+      "target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel@CommonStates",
       "styles": [
         "Padding=0",
         "Width=104",
         "CornerRadius=0,12,12,0",
-        "Background:=$StartBrush",
         "BorderThickness=0,0,2,0",
-        "BorderBrush:=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#40103E12\" Offset=\"0.0\" /><GradientStop Color=\"#FF103E12\" Offset=\"1.0\" /></LinearGradientBrush>"
+        "BorderBrush:=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#40103E12\" Offset=\"0.0\" /><GradientStop Color=\"#FF103E12\" Offset=\"1.0\" /></LinearGradientBrush>",
+        "Background:=$StartBrush",
+        "Background@PointerOver:=$StartHoverBrush",
+        "Background@Pressed:=$StartPressedBrush"
       ]
     },
     {
