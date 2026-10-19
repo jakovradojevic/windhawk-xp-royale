@@ -191,56 +191,6 @@
       ]
     },
     {
-      "target": "MenuFlyoutPresenter",
-      "styles": [
-        "Background=#FFFFFF",
-        "BorderBrush=#0A246A",
-        "BorderThickness=1",
-        "CornerRadius=0",
-        "Padding=2"
-      ]
-    },
-    {
-      "target": "MenuFlyoutPresenter > Border",
-      "styles": [
-        "Background=#FFFFFF",
-        "BorderBrush=#0A246A",
-        "BorderThickness=1",
-        "CornerRadius=0"
-      ]
-    },
-    {
-      "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates",
-      "styles": [
-        "CornerRadius=0",
-        "Background@PointerOver=#316AC5",
-        "Background@Pressed=#2456A8"
-      ]
-    },
-    {
-      "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates > TextBlock#TextBlock",
-      "styles": [
-        "FontFamily=$XpFont",
-        "Foreground=#000000",
-        "Foreground@PointerOver=#FFFFFF",
-        "Foreground@Pressed=#FFFFFF"
-      ]
-    },
-    {
-      "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates > Viewbox#IconRoot > ContentPresenter#IconContent",
-      "styles": [
-        "Foreground=#0A246A",
-        "Foreground@PointerOver=#FFFFFF",
-        "Foreground@Pressed=#FFFFFF"
-      ]
-    },
-    {
-      "target": "MenuFlyoutSeparator",
-      "styles": [
-        "Background=#C7D7F2"
-      ]
-    },
-    {
       "target": "StartMenu.SearchBoxToggleButton",
       "styles": [
         "IsHitTestVisible=False"
@@ -282,10 +232,62 @@
         "BorderThickness=1",
         "CornerRadius=0"
       ]
+    },
+    {
+      "target": "MenuFlyoutPresenter",
+      "styles": [
+        "RequestedTheme=1",
+        "Background=#FFFFFF",
+        "BorderBrush=#ACA899",
+        "BorderThickness=1",
+        "CornerRadius=0",
+        "Padding=2"
+      ]
+    },
+    {
+      "target": "MenuFlyoutPresenter > Border",
+      "styles": [
+        "Background=#FFFFFF",
+        "BorderBrush=#ACA899",
+        "BorderThickness=1",
+        "CornerRadius=0"
+      ]
+    },
+    {
+      "target": "MenuFlyoutItem",
+      "styles": [
+        "MinHeight=24",
+        "Padding=10,3,18,3"
+      ]
+    },
+    {
+      "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates",
+      "styles": [
+        "CornerRadius=0",
+        "Margin=0"
+      ]
+    },
+    {
+      "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates > TextBlock#TextBlock",
+      "styles": [
+        "FontFamily=$XpFont",
+        "FontSize=12"
+      ]
+    },
+    {
+      "target": "MenuFlyoutSeparator",
+      "styles": [
+        "Background=#ACA899",
+        "Margin=2,3,2,3"
+      ]
     }
   ],
   "themeResourceVariables": [
-    ""
+    "MenuFlyoutItemForeground=#000000",
+    "MenuFlyoutItemForegroundPointerOver=#FFFFFF",
+    "MenuFlyoutItemForegroundPressed=#FFFFFF",
+    "MenuFlyoutItemBackgroundPointerOver=#316AC5",
+    "MenuFlyoutItemBackgroundPressed=#2456A8"
   ],
   "webContentStyles": [
     {
@@ -404,13 +406,6 @@
       ]
     },
     {
-      "target": "#qfContainer",
-      "styles": [
-        "padding-bottom: 62px !important",
-        "box-sizing: border-box !important"
-      ]
-    },
-    {
       "target": ".suggestion:not(.groupHeader):hover, .suggestion[aria-selected=\"true\"], .suggestion.selected",
       "styles": [
         "background: #316AC5 !important",
@@ -496,16 +491,6 @@
       ]
     },
     {
-      "target": "#qfPreviewPane",
-      "styles": [
-        "background: linear-gradient(to right, #C9DCF7, #D6E5FA 50%, #D3E5FA) !important",
-        "border-radius: 0 !important",
-        "border-left: 1px solid #95BDEE !important",
-        "margin-right: 0 !important",
-        "flex-grow: 1 !important"
-      ]
-    },
-    {
       "target": ".scope-with-background__leftCaret *, .scope-with-background__rightCaret *",
       "styles": [
         "color: #000000 !important"
@@ -516,7 +501,43 @@
       "styles": [
         "display: none !important"
       ]
+    },
+    {
+      "target": "html, body, #root, #rootContainer, .resultsContainer, #horizontalScrollBar, #qfContainer, #qfContainerScroll, #qfPreviewPane, #qfPreviewScrollArea",
+      "styles": [
+        "overflow-x: clip !important"
+      ]
+    },
+    {
+      "target": "#qfContainer",
+      "styles": [
+        "flex: none !important",
+        "width: calc(100vw - 400px) !important",
+        "max-width: calc(100vw - 400px) !important",
+        "min-width: 0 !important",
+        "box-sizing: border-box !important",
+        "padding: 0 12px 62px 0 !important"
+      ]
+    },
+    {
+      "target": "#qfPreviewPane",
+      "styles": [
+        "position: fixed !important",
+        "right: 0 !important",
+        "top: 54px !important",
+        "bottom: 0 !important",
+        "width: 400px !important",
+        "min-width: 400px !important",
+        "max-width: 400px !important",
+        "margin: 0 !important",
+        "padding-bottom: 62px !important",
+        "box-sizing: border-box !important",
+        "z-index: 1 !important",
+        "background: linear-gradient(to right, #C9DCF7, #D6E5FA 50%, #D3E5FA) !important",
+        "border-radius: 0 !important",
+        "border-left: 1px solid #95BDEE !important"
+      ]
     }
   ],
-  "webContentCustomJs": ""
+  "webContentCustomJs": "(function () {\n  // XP Royale: keep the two result columns fixed. Hovering a row shows its \"Preview\"\n  // button and the page scrolls horizontally to reveal it, shifting both columns.\n  if (window.__xpRoyaleNoHScroll) return;\n  window.__xpRoyaleNoHScroll = true;\n  document.addEventListener('scroll', function (e) {\n    var t = e.target === document ? document.scrollingElement : e.target;\n    if (t && t.scrollLeft) t.scrollLeft = 0;\n  }, true);\n})();"
 }
