@@ -272,6 +272,8 @@
       "styles": [
         "FontFamily=$XpFont",
         "FontSize=12",
+        "Foreground=#000000",
+        "Foreground@Normal=#000000",
         "Foreground@PointerOver=#FFFFFF",
         "Foreground@Pressed=#FFFFFF"
       ]
@@ -286,6 +288,8 @@
     {
       "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates > Viewbox#IconRoot > ContentPresenter#IconContent",
       "styles": [
+        "Foreground=#000000",
+        "Foreground@Normal=#000000",
         "Foreground@PointerOver=#FFFFFF",
         "Foreground@Pressed=#FFFFFF"
       ]
