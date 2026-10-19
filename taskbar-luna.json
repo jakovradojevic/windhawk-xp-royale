@@ -51,8 +51,11 @@
         "BorderThickness=0,0,2,0",
         "BorderBrush:=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#40103E12\" Offset=\"0.0\" /><GradientStop Color=\"#FF103E12\" Offset=\"1.0\" /></LinearGradientBrush>",
         "Background:=$StartBrush",
-        "Background@PointerOver:=$StartHoverBrush",
-        "Background@Pressed:=$StartPressedBrush"
+        "Background@InactivePointerOver:=$StartHoverBrush",
+        "Background@InactivePressed:=$StartPressedBrush",
+        "Background@ActiveNormal:=$StartPressedBrush",
+        "Background@ActivePointerOver:=$StartPressedBrush",
+        "Background@ActivePressed:=$StartPressedBrush"
       ]
     },
     {

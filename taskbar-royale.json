@@ -5,9 +5,9 @@
     "BarBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#628ACE\" Offset=\"0\" /><GradientStop Color=\"#83C2ED\" Offset=\"0.07\" /><GradientStop Color=\"#76B3EC\" Offset=\"0.25\" /><GradientStop Color=\"#5B9AE1\" Offset=\"0.46\" /><GradientStop Color=\"#4A89DA\" Offset=\"0.5\" /><GradientStop Color=\"#3D7FD2\" Offset=\"0.54\" /><GradientStop Color=\"#3260B9\" Offset=\"0.75\" /><GradientStop Color=\"#2C55B1\" Offset=\"0.93\" /><GradientStop Color=\"#294CA3\" Offset=\"1\" /></LinearGradientBrush>",
     "TrayBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#9DB1BF\" Offset=\"0\" /><GradientStop Color=\"#F3F9FF\" Offset=\"0.07\" /><GradientStop Color=\"#E1ECFE\" Offset=\"0.25\" /><GradientStop Color=\"#C7D8F2\" Offset=\"0.51\" /><GradientStop Color=\"#B6CDEE\" Offset=\"0.55\" /><GradientStop Color=\"#A7C3E8\" Offset=\"0.59\" /><GradientStop Color=\"#8AAEDD\" Offset=\"0.75\" /><GradientStop Color=\"#719BD2\" Offset=\"0.9\" /><GradientStop Color=\"#5F8FCE\" Offset=\"1\" /></LinearGradientBrush>",
     "ButtonBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#9CC4EE\" Offset=\"0\" /><GradientStop Color=\"#84ABDC\" Offset=\"0.08\" /><GradientStop Color=\"#7EBEED\" Offset=\"0.25\" /><GradientStop Color=\"#649FE6\" Offset=\"0.46\" /><GradientStop Color=\"#4F8DDB\" Offset=\"0.5\" /><GradientStop Color=\"#3E80D2\" Offset=\"0.54\" /><GradientStop Color=\"#315EB8\" Offset=\"0.85\" /><GradientStop Color=\"#2D55B1\" Offset=\"1\" /></LinearGradientBrush>",
-    "StartBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#2E6E33\" Offset=\"0\" /><GradientStop Color=\"#86D08F\" Offset=\"0.06\" /><GradientStop Color=\"#52AE5A\" Offset=\"0.22\" /><GradientStop Color=\"#33933B\" Offset=\"0.5\" /><GradientStop Color=\"#25802C\" Offset=\"0.8\" /><GradientStop Color=\"#165F1C\" Offset=\"1\" /></LinearGradientBrush>",
-    "StartHoverBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#3A7F40\" Offset=\"0\" /><GradientStop Color=\"#9CE0A5\" Offset=\"0.06\" /><GradientStop Color=\"#63C06B\" Offset=\"0.22\" /><GradientStop Color=\"#3FA447\" Offset=\"0.5\" /><GradientStop Color=\"#2E8E35\" Offset=\"0.8\" /><GradientStop Color=\"#1B6B21\" Offset=\"1\" /></LinearGradientBrush>",
-    "StartPressedBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#13341F\" Offset=\"0\" /><GradientStop Color=\"#2B7A31\" Offset=\"0.1\" /><GradientStop Color=\"#1D7E1E\" Offset=\"0.45\" /><GradientStop Color=\"#0B5A0B\" Offset=\"0.55\" /><GradientStop Color=\"#005B00\" Offset=\"0.75\" /><GradientStop Color=\"#018102\" Offset=\"1\" /></LinearGradientBrush>"
+    "StartBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#13341F\" Offset=\"0\" /><GradientStop Color=\"#418A47\" Offset=\"0.07\" /><GradientStop Color=\"#3C9145\" Offset=\"0.2\" /><GradientStop Color=\"#1D7E1E\" Offset=\"0.44\" /><GradientStop Color=\"#127016\" Offset=\"0.5\" /><GradientStop Color=\"#046506\" Offset=\"0.56\" /><GradientStop Color=\"#005B00\" Offset=\"0.7\" /><GradientStop Color=\"#018102\" Offset=\"1\" /></LinearGradientBrush>",
+    "StartHoverBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#1E4A2B\" Offset=\"0\" /><GradientStop Color=\"#56A85D\" Offset=\"0.07\" /><GradientStop Color=\"#4FA957\" Offset=\"0.2\" /><GradientStop Color=\"#2C9530\" Offset=\"0.44\" /><GradientStop Color=\"#1E8424\" Offset=\"0.5\" /><GradientStop Color=\"#0E7710\" Offset=\"0.56\" /><GradientStop Color=\"#077008\" Offset=\"0.7\" /><GradientStop Color=\"#0E9410\" Offset=\"1\" /></LinearGradientBrush>",
+    "StartPressedBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#0A2410\" Offset=\"0\" /><GradientStop Color=\"#155F18\" Offset=\"0.12\" /><GradientStop Color=\"#0F5A10\" Offset=\"0.45\" /><GradientStop Color=\"#0B5A0B\" Offset=\"0.5\" /><GradientStop Color=\"#1A7A1C\" Offset=\"0.8\" /><GradientStop Color=\"#3C9145\" Offset=\"1\" /></LinearGradientBrush>"
   ],
   "controlStyles": [
     {
@@ -51,8 +51,11 @@
         "BorderThickness=0,0,2,0",
         "BorderBrush:=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#40103E12\" Offset=\"0.0\" /><GradientStop Color=\"#FF103E12\" Offset=\"1.0\" /></LinearGradientBrush>",
         "Background:=$StartBrush",
-        "Background@PointerOver:=$StartHoverBrush",
-        "Background@Pressed:=$StartPressedBrush"
+        "Background@InactivePointerOver:=$StartHoverBrush",
+        "Background@InactivePressed:=$StartPressedBrush",
+        "Background@ActiveNormal:=$StartPressedBrush",
+        "Background@ActivePointerOver:=$StartPressedBrush",
+        "Background@ActivePressed:=$StartPressedBrush"
       ]
     },
     {
