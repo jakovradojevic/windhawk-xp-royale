@@ -284,6 +284,46 @@
         "Background=#ACA899",
         "Margin=2,3,2,3"
       ]
+    },
+    {
+      "target": "Microsoft.UI.Xaml.Controls.MenuFlyoutPresenter",
+      "styles": [
+        "Background=#FFFFFF",
+        "BorderBrush=#0A246A",
+        "BorderThickness=1",
+        "CornerRadius=0",
+        "Padding=2"
+      ]
+    },
+    {
+      "target": "Microsoft.UI.Xaml.Controls.MenuFlyoutPresenter > Border",
+      "styles": [
+        "Background=#FFFFFF",
+        "BorderBrush=#0A246A",
+        "BorderThickness=1",
+        "CornerRadius=0"
+      ]
+    },
+    {
+      "target": "Microsoft.UI.Xaml.Controls.RadioMenuFlyoutItem > Grid#LayoutRoot",
+      "styles": [
+        "CornerRadius=0",
+        "Margin=0"
+      ]
+    },
+    {
+      "target": "Microsoft.UI.Xaml.Controls.RadioMenuFlyoutItem > Grid#LayoutRoot > TextBlock#TextBlock",
+      "styles": [
+        "FontFamily=$XpFont",
+        "FontSize=12"
+      ]
+    },
+    {
+      "target": "ToggleMenuFlyoutItem > Grid#LayoutRoot",
+      "styles": [
+        "CornerRadius=0",
+        "Margin=0"
+      ]
     }
   ],
   "themeResourceVariables": [
@@ -291,7 +331,21 @@
     "MenuFlyoutItemForegroundPointerOver=#FFFFFF",
     "MenuFlyoutItemForegroundPressed=#FFFFFF",
     "MenuFlyoutItemBackgroundPointerOver=#316AC5",
-    "MenuFlyoutItemBackgroundPressed=#2456A8"
+    "MenuFlyoutItemBackgroundPressed=#2456A8",
+    "ToggleMenuFlyoutItemForeground=#000000",
+    "ToggleMenuFlyoutItemForegroundPointerOver=#FFFFFF",
+    "ToggleMenuFlyoutItemForegroundPressed=#FFFFFF",
+    "ToggleMenuFlyoutItemBackgroundPointerOver=#316AC5",
+    "ToggleMenuFlyoutItemBackgroundPressed=#2456A8",
+    "ToggleMenuFlyoutItemCheckGlyphForeground=#000000",
+    "ToggleMenuFlyoutItemCheckGlyphForegroundPointerOver=#FFFFFF",
+    "ToggleMenuFlyoutItemCheckGlyphForegroundPressed=#FFFFFF",
+    "ToggleMenuFlyoutItemKeyboardAcceleratorTextForegroundPointerOver=#FFFFFF",
+    "MenuFlyoutItemKeyboardAcceleratorTextForegroundPointerOver=#FFFFFF",
+    "MenuFlyoutSubItemForeground=#000000",
+    "MenuFlyoutSubItemForegroundPointerOver=#FFFFFF",
+    "MenuFlyoutSubItemBackgroundPointerOver=#316AC5",
+    "MenuFlyoutSubItemChevronPointerOver=#FFFFFF"
   ],
   "webContentStyles": [
     {
