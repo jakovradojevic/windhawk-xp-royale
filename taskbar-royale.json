@@ -1,0 +1,168 @@
+{
+  "theme": "",
+  "styleConstants": [
+    "BarBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#2F4FA8\" Offset=\"0.0\" /><GradientStop Color=\"#6C8BD8\" Offset=\"0.06\" /><GradientStop Color=\"#2A4CB0\" Offset=\"0.16\" /><GradientStop Color=\"#1A3796\" Offset=\"0.6\" /><GradientStop Color=\"#132C82\" Offset=\"0.92\" /><GradientStop Color=\"#0A1C5C\" Offset=\"1.0\" /></LinearGradientBrush>",
+    "StartBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#2F6E2F\" Offset=\"0.0\" /><GradientStop Color=\"#9BE29B\" Offset=\"0.07\" /><GradientStop Color=\"#4DB84D\" Offset=\"0.22\" /><GradientStop Color=\"#2F8F33\" Offset=\"0.7\" /><GradientStop Color=\"#1D6421\" Offset=\"0.92\" /><GradientStop Color=\"#103E12\" Offset=\"1.0\" /></LinearGradientBrush>",
+    "ButtonBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#7C9BE6\" Offset=\"0.0\" /><GradientStop Color=\"#4F72CE\" Offset=\"0.12\" /><GradientStop Color=\"#3A5DC0\" Offset=\"0.85\" /><GradientStop Color=\"#2A49A6\" Offset=\"1.0\" /></LinearGradientBrush>",
+    "ButtonActiveBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#0B1F66\" Offset=\"0.0\" /><GradientStop Color=\"#16308A\" Offset=\"0.2\" /><GradientStop Color=\"#1A3796\" Offset=\"1.0\" /></LinearGradientBrush>",
+    "TrayBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#1A7FE0\" Offset=\"0.0\" /><GradientStop Color=\"#5FB4F5\" Offset=\"0.06\" /><GradientStop Color=\"#1E86E6\" Offset=\"0.18\" /><GradientStop Color=\"#1673D6\" Offset=\"0.85\" /><GradientStop Color=\"#0D4FB0\" Offset=\"1.0\" /></LinearGradientBrush>"
+  ],
+  "controlStyles": [
+    {
+      "target": "Rectangle#BackgroundFill",
+      "styles": [
+        "Fill:=$BarBrush"
+      ]
+    },
+    {
+      "target": "Rectangle#BackgroundStroke",
+      "styles": [
+        "Fill:=$BarBrush",
+        "VerticalAlignment=Stretch",
+        "Height=Auto"
+      ]
+    },
+    {
+      "target": "Taskbar.TaskbarBackground#HoverFlyoutBackgroundControl > Grid > Rectangle#BackgroundFill",
+      "styles": [
+        "Fill:=$BarBrush"
+      ]
+    },
+    {
+      "target": "Grid#OverflowRootGrid > Border",
+      "styles": [
+        "Background:=$BarBrush"
+      ]
+    },
+    {
+      "target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton]",
+      "styles": [
+        "Margin=-9,0,8,0"
+      ]
+    },
+    {
+      "target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel",
+      "styles": [
+        "Padding=0",
+        "Width=104",
+        "CornerRadius=0,12,12,0",
+        "Background:=$StartBrush",
+        "BorderThickness=0,0,2,0",
+        "BorderBrush:=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#40103E12\" Offset=\"0.0\" /><GradientStop Color=\"#FF103E12\" Offset=\"1.0\" /></LinearGradientBrush>"
+      ]
+    },
+    {
+      "target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Grid > Border#BackgroundElement, Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Border#BackgroundElement",
+      "styles": [
+        "Background:=<ImageBrush Stretch=\"None\" ImageSource=\"https://raw.githubusercontent.com/ramensoftware/windows-11-taskbar-styling-guide/refs/heads/main/Themes/WinXP/Assets/orb.png\" />"
+      ]
+    },
+    {
+      "target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Grid > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon, Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon",
+      "styles": [
+        "Visibility=Collapsed"
+      ]
+    },
+    {
+      "target": "Rectangle#RunningIndicator",
+      "styles": [
+        "Visibility=Collapsed"
+      ]
+    },
+    {
+      "target": "Taskbar.TaskListButton",
+      "styles": [
+        "Margin=-2"
+      ]
+    },
+    {
+      "target": "Grid#IconPanel@RunningIndicatorStates > Border#BackgroundElement, Taskbar.TaskListLabeledButtonPanel@RunningIndicatorStates > Border#BackgroundElement",
+      "styles": [
+        "CornerRadius=3",
+        "BorderThickness=1",
+        "Background:=$ButtonBrush",
+        "Background@NoRunningIndicator=Transparent",
+        "Background@ActiveRunningIndicator:=$ButtonActiveBrush",
+        "BorderBrush=#1A3A9E",
+        "BorderBrush@NoRunningIndicator=Transparent",
+        "BorderBrush@ActiveRunningIndicator=#06144A"
+      ]
+    },
+    {
+      "target": "TextBlock#LabelControl",
+      "styles": [
+        "Foreground=White",
+        "FontFamily=Tahoma"
+      ]
+    },
+    {
+      "target": "StackPanel#SystemTrayFrameGrid, Grid#SystemTrayFrameGrid",
+      "styles": [
+        "Background:=$TrayBrush",
+        "BorderThickness=1,0,0,0",
+        "BorderBrush=#0A2F7A",
+        "Padding={{-ChevronIconWidth/2}},0,0,0"
+      ]
+    },
+    {
+      "target": "SystemTray.Stack#NotifyIconStack",
+      "styles": [
+        "ActualWidth=>ChevronIconWidth"
+      ]
+    },
+    {
+      "target": "SystemTray.ChevronIconView > Grid#ContainerGrid > Border#BackgroundBorder",
+      "styles": [
+        "Background:=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"1,1\"><GradientStop Color=\"#A9D4F5\" Offset=\"0.0\" /><GradientStop Color=\"#5AAEF0\" Offset=\"0.4\" /><GradientStop Color=\"#1462C8\" Offset=\"1\" /></LinearGradientBrush>",
+        "Width=20",
+        "Height=20",
+        "CornerRadius=10",
+        "BorderThickness=1",
+        "BorderBrush=#0A2F7A"
+      ]
+    },
+    {
+      "target": "TextBlock#TimeInnerTextBlock",
+      "styles": [
+        "Foreground=White",
+        "FontFamily=Tahoma"
+      ]
+    },
+    {
+      "target": "TextBlock#DateInnerTextBlock",
+      "styles": [
+        "Foreground=White",
+        "FontFamily=Tahoma"
+      ]
+    },
+    {
+      "target": "SystemTray.TextIconContent > Grid > SystemTray.AdaptiveTextBlock#Base > TextBlock",
+      "styles": [
+        "Foreground=White"
+      ]
+    },
+    {
+      "target": "SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel > TextBlock",
+      "styles": [
+        "Foreground=White"
+      ]
+    },
+    {
+      "target": "SystemTray.BatteryIconContent > Grid#ContainerGrid > StackPanel > Grid > TextBlock[1]",
+      "styles": [
+        "Foreground=White"
+      ]
+    }
+  ],
+  "themeResourceVariables": [
+    ""
+  ],
+  "xamlDiagnosticsHandling": "block",
+  "resourceVariables": [
+    {
+      "variableKey": "",
+      "value": ""
+    }
+  ],
+  "clickThroughTaskbar": 0
+}
