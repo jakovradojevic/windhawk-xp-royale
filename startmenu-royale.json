@@ -2,13 +2,13 @@
   "theme": "",
   "disableNewStartMenuLayout": "newLayoutSideBySide",
   "styleConstants": [
-    "RightBrush=<LinearGradientBrush StartPoint=\"0,0.5\" EndPoint=\"1,0.5\"><GradientStop Color=\"#C9DCF7\" Offset=\"0.0\" /><GradientStop Color=\"#D6E5FA\" Offset=\"0.5\" /><GradientStop Color=\"#D3E5FA\" Offset=\"1.0\" /></LinearGradientBrush>",
     "OrangeLine=<LinearGradientBrush StartPoint=\"0,0.5\" EndPoint=\"1,0.5\"><GradientStop Color=\"#00E59700\" Offset=\"0.0\" /><GradientStop Color=\"#FFE59700\" Offset=\"0.5\" /><GradientStop Color=\"#00E59700\" Offset=\"1.0\" /></LinearGradientBrush>",
     "XpFont=Tahoma",
     "HoverBrush=#55316AC5",
     "HoverBorder=#316AC5",
-    "MenuBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#3A66D0\" Offset=\"0.0\" /><GradientStop Color=\"#6A92E6\" Offset=\"0.0058\" /><GradientStop Color=\"#2E5BC9\" Offset=\"0.0231\" /><GradientStop Color=\"#1C42AA\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"0.9261\" /><GradientStop Color=\"#E59700\" Offset=\"0.9261\" /><GradientStop Color=\"#E59700\" Offset=\"0.9296\" /><GradientStop Color=\"#4A74D6\" Offset=\"0.9296\" /><GradientStop Color=\"#2A55C4\" Offset=\"0.9469\" /><GradientStop Color=\"#1A3FA8\" Offset=\"0.99\" /><GradientStop Color=\"#12308C\" Offset=\"1.0\" /></LinearGradientBrush>",
-    "SearchBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#3A66D0\" Offset=\"0.0\" /><GradientStop Color=\"#6A92E6\" Offset=\"0.0058\" /><GradientStop Color=\"#2E5BC9\" Offset=\"0.0231\" /><GradientStop Color=\"#1C42AA\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"1.0\" /></LinearGradientBrush>"
+    "MenuBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#628ACE\" Offset=\"0.0\" /><GradientStop Color=\"#83C2ED\" Offset=\"0.0046\" /><GradientStop Color=\"#76B3EC\" Offset=\"0.0185\" /><GradientStop Color=\"#5795DF\" Offset=\"0.0358\" /><GradientStop Color=\"#397CCF\" Offset=\"0.0358\" /><GradientStop Color=\"#2C55B1\" Offset=\"0.067\" /><GradientStop Color=\"#294CA3\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"0.9261\" /><GradientStop Color=\"#E59700\" Offset=\"0.9261\" /><GradientStop Color=\"#E59700\" Offset=\"0.9296\" /><GradientStop Color=\"#628ACE\" Offset=\"0.9296\" /><GradientStop Color=\"#83C2ED\" Offset=\"0.9342\" /><GradientStop Color=\"#76B3EC\" Offset=\"0.9469\" /><GradientStop Color=\"#5795DF\" Offset=\"0.963\" /><GradientStop Color=\"#397CCF\" Offset=\"0.963\" /><GradientStop Color=\"#2C55B1\" Offset=\"0.9931\" /><GradientStop Color=\"#294CA3\" Offset=\"1.0\" /></LinearGradientBrush>",
+    "SearchBrush=<LinearGradientBrush StartPoint=\"0.5,0\" EndPoint=\"0.5,1\"><GradientStop Color=\"#628ACE\" Offset=\"0.0\" /><GradientStop Color=\"#83C2ED\" Offset=\"0.0046\" /><GradientStop Color=\"#76B3EC\" Offset=\"0.0185\" /><GradientStop Color=\"#5795DF\" Offset=\"0.0358\" /><GradientStop Color=\"#397CCF\" Offset=\"0.0358\" /><GradientStop Color=\"#2C55B1\" Offset=\"0.067\" /><GradientStop Color=\"#294CA3\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0704\" /><GradientStop Color=\"#E59700\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"0.0739\" /><GradientStop Color=\"#FFFFFF\" Offset=\"1.0\" /></LinearGradientBrush>",
+    "RightBrush=<LinearGradientBrush StartPoint=\"0,0.5\" EndPoint=\"1,0.5\"><GradientStop Color=\"#DCE8F8\" Offset=\"0.0\" /><GradientStop Color=\"#E9F1FC\" Offset=\"0.5\" /><GradientStop Color=\"#E3EDFA\" Offset=\"1.0\" /></LinearGradientBrush>"
   ],
   "controlStyles": [
     {
@@ -79,7 +79,7 @@
       "target": "GridView#AllAppsGrid > Border > Grid#SideBySidePinnedWrapper > ScrollViewer#ScrollViewer",
       "styles": [
         "Background:=$RightBrush",
-        "BorderBrush=#95BDEE",
+        "BorderBrush=#A7C3E8",
         "BorderThickness=1,0,0,0"
       ]
     },
@@ -400,7 +400,7 @@
         "bottom: 0 !important",
         "height: 59px !important",
         "border-top: 3px solid #E59700 !important",
-        "background: linear-gradient(#4A74D6, #2A55C4 25%, #1A3FA8 90%, #12308C) !important",
+        "background: linear-gradient(#83C2ED, #76B3EC 25%, #5795DF 50%, #397CCF 50%, #2C55B1 90%, #294CA3) !important",
         "z-index: 2147483000 !important",
         "pointer-events: none !important"
       ]
@@ -533,9 +533,9 @@
         "padding-bottom: 62px !important",
         "box-sizing: border-box !important",
         "z-index: 1 !important",
-        "background: linear-gradient(to right, #C9DCF7, #D6E5FA 50%, #D3E5FA) !important",
+        "background: linear-gradient(to right, #DCE8F8, #E9F1FC 50%, #E3EDFA) !important",
         "border-radius: 0 !important",
-        "border-left: 1px solid #95BDEE !important"
+        "border-left: 1px solid #A7C3E8 !important"
       ]
     }
   ],

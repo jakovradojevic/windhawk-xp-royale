@@ -5,6 +5,14 @@
 - `apply-theme.ps1`: upisuje JSON u Windhawk registry i reload-uje mod (pokrenuti kao admin)
 - `backup\*.reg`: originalna podešavanja pre izmena
 
+## Varijante
+
+- **Royale** (Energy Blue, Media Center): `taskbar-royale.json`, `startmenu-royale.json`. Staklasta svetloplava
+  traka sa tamnijom donjom polovinom, tamnozeleno Start dugme, svetli tray sa tamnim satom. Boje su uzete
+  sa originalnog Royale screenshot-a. Ove fajlove primenjuje watcher.
+- **Luna** (klasični XP plavi): `taskbar-luna.json`, `startmenu-luna.json`. Primena:
+  `.pply-theme.ps1 -Mod windows-11-taskbar-styler -Json .	askbar-luna.json` (i isto za Start meni).
+
 ## Primena (PowerShell kao administrator)
 
 ```powershell
