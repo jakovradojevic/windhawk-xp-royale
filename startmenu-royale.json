@@ -284,15 +284,6 @@
         "Background=#ACA899",
         "Margin=2,3,2,3"
       ]
-    },
-    {
-      "target": "MenuFlyoutItem > Grid#LayoutRoot@CommonStates > Viewbox#IconRoot > ContentPresenter#IconContent",
-      "styles": [
-        "Foreground=#000000",
-        "Foreground@Normal=#000000",
-        "Foreground@PointerOver=#FFFFFF",
-        "Foreground@Pressed=#FFFFFF"
-      ]
     }
   ],
   "themeResourceVariables": [
